@@ -1,0 +1,70 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  
+  
+  <!-- Ligne 2: commence milieu gauche, termine en haut à droite -->
+  <path d="M 0 300 C 120 380, 220 320, 350 280 C 480 240, 650 120, 800 80" 
+        stroke="#ffaec8" 
+        stroke-width="1" 
+        fill="none" 
+        stroke-linecap="round"
+        opacity="0.2">
+    <animate attributeName="d" 
+             dur="15s" 
+             repeatCount="indefinite"
+             values="M 0 300 C 120 380, 220 320, 350 280 C 480 240, 650 120, 800 80;
+                     M 0 300 C 120 200, 220 420, 350 350 C 480 280, 650 100, 800 80;
+                     M 0 300 C 120 450, 220 250, 350 220 C 480 190, 650 140, 800 80;
+                     M 0 300 C 120 380, 220 320, 350 280 C 480 240, 650 120, 800 80"/>
+  </path>
+  
+  
+  
+  <!-- Ligne 5: diagonale inversée douce -->
+  <path d="M 0 450 C 150 350, 280 280, 420 320 C 560 360, 680 180, 800 120" 
+        stroke="#ffaec8" 
+        stroke-width="1" 
+        fill="none" 
+        stroke-linecap="round"
+        opacity="0.2">
+    <animate attributeName="d" 
+             dur="15s" 
+             repeatCount="indefinite"
+             values="M 0 450 C 150 350, 280 280, 420 320 C 560 360, 680 180, 800 120;
+                     M 0 450 C 150 480, 280 400, 420 380 C 560 360, 680 160, 800 120;
+                     M 0 450 C 150 320, 280 220, 420 280 C 560 340, 680 200, 800 120;
+                     M 0 450 C 150 350, 280 280, 420 320 C 560 360, 680 180, 800 120"/>
+  </path>
+  
+  <!-- Ligne 6: ultra douce -->
+  <path d="M 0 200 C 140 320, 240 380, 380 320 C 520 260, 660 380, 800 350" 
+        stroke="#ffaec8" 
+        stroke-width="1" 
+        fill="none" 
+        stroke-linecap="round"
+        opacity="0.2">
+    <animate attributeName="d" 
+             dur="13s" 
+             repeatCount="indefinite"
+             values="M 0 200 C 140 320, 240 380, 380 320 C 520 260, 660 380, 800 350;
+                     M 0 200 C 140 180, 240 140, 380 180 C 520 220, 660 320, 800 350;
+                     M 0 200 C 140 280, 240 340, 380 280 C 520 220, 660 420, 800 350;
+                     M 0 200 C 140 320, 240 380, 380 320 C 520 260, 660 380, 800 350"/>
+  </path>
+  
+  
+  <!-- Ligne 8: fluide et naturelle -->
+  <path d="M 0 150 C 170 220, 290 280, 420 240 C 550 200, 690 220, 800 200" 
+        stroke="#ffaec8" 
+        stroke-width="1" 
+        fill="none" 
+        stroke-linecap="round"
+        opacity="0.2">
+    <animate attributeName="d" 
+             dur="12s" 
+             repeatCount="indefinite"
+             values="M 0 150 C 170 220, 290 280, 420 240 C 550 200, 690 220, 800 200;
+                     M 0 150 C 170 180, 290 140, 420 180 C 550 220, 690 240, 800 200;
+                     M 0 150 C 170 260, 290 320, 420 280 C 550 240, 690 200, 800 200;
+                     M 0 150 C 170 220, 290 280, 420 240 C 550 200, 690 220, 800 200"/>
+  </path>
+</svg>

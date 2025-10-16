@@ -1,0 +1,61 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/vue/Header.vue';
+import Hero from '../components/svelte/Hero.svelte';
+import About from '../components/astro/About.astro';
+import Skills from '../components/react/Skills.jsx';
+import Projects from '../components/react/Projects.jsx';
+import Contact from '../components/vue/Contact.vue';
+---
+
+<Layout title="Sinem Arik - Développeuse Backend Java & Data">
+  <Header client:load />
+  <main>
+    <Hero client:load />
+    <About />
+    <Skills client:load />
+    <Projects client:load />
+    <Contact client:load />
+  </main>
+  
+  <footer class="footer footer-center p-10 bg-base-300 text-base-content">
+    <div>
+      <div class="grid grid-flow-col gap-4">
+        <a href="https://github.com" target="_blank" class="link link-hover">GitHub</a>
+        <a href="https://linkedin.com" target="_blank" class="link link-hover">LinkedIn</a>
+        <a href="mailto:sinem.arik@email.com" class="link link-hover">Email</a>
+      </div>
+      <div class="mt-4">
+        <p class="text-sm text-base-content/70">
+          © 2025 Sinem Arik. Développé avec Astro, React, Vue & Svelte.
+        </p>
+      </div>
+    </div>
+  </footer>
+</Layout>
+
+<script>
+  // Smooth scrolling pour les liens d'ancrage
+  document.addEventListener('DOMContentLoaded', function() {
+    const links = document.querySelectorAll('a[href^="#"]');
+    
+    links.forEach(link => {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        
+        const targetId = this.getAttribute('href');
+        const targetSection = document.querySelector(targetId);
+        
+        if (targetSection) {
+          const headerHeight = document.querySelector('header')?.offsetHeight || 0;
+          const targetPosition = targetSection.offsetTop - headerHeight - 20;
+          
+          window.scrollTo({
+            top: targetPosition,
+            behavior: 'smooth'
+          });
+        }
+      });
+    });
+  });
+</script>
