@@ -5,6 +5,8 @@ import svelte from '@astrojs/svelte';
 import tailwind from '@astrojs/tailwind';
 
 export default defineConfig({
+  site: 'https://nojikodaisy.github.io',
+  base: '/portfolio',
   integrations: [
     react({
       include: ['**/react/**']
