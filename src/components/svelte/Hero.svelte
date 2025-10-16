@@ -18,7 +18,7 @@
 </script>
 
 <section class="hero min-h-screen bg-cover bg-center bg-no-repeat" 
-  style="background-image: url({base}lines2.svg);" 
+  style="background-image: url({base}/lines2.svg);" 
   id="home"
 >
   <div class="hero-content text-center max-w-4xl">
