@@ -25,7 +25,7 @@
     <div class="max-w-md">
       <div class="avatar mb-8">
         <div class="w-32 rounded-full">
-          <img src="{base}luna.jpeg" alt="sinem Arik" />
+          <img src="{base}/luna.jpeg" alt="sinem Arik" />
         </div>
       </div>
       
