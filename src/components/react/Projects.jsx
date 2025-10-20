@@ -8,7 +8,7 @@ const projects = [
     image: "/",
     tech: ["Astro", "React", "Svelte", "Vue", "DaisyUI", "Tailwind CSS"],
     category: "frontend",
-    github: "https://github.com/ton-username/portfolio",
+    github: "https://github.com/nojikodaisy/portfolio",
     featured: false
   }
 ];
@@ -166,7 +166,7 @@ export default function Projects() {
         )}
 
         <div className="text-center mt-12">
-          <a href="https://github.com" className="btn btn-outline border-pink text-pink hover:bg-pink hover:text-pink-content btn-lg" target="_blank">
+          <a href="https://github.com/nojikodaisy" className="btn btn-outline border-pink text-pink hover:bg-pink hover:text-pink-content btn-lg" target="_blank">
             Voir plus sur GitHub
             <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
