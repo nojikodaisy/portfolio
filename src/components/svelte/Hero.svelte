@@ -50,7 +50,7 @@
         <a href="#projects" class="btn hover:border-lightpink hover:bg-lightpink inset-shadow-sm hover:shadow-xl transition-shadow" target="_blank">
           Mes projets
         </a>
-        <a href="/url({base}/CV2025SINEM.pdf" class="btn hover:border-lightpink hover:bg-lightpink inset-shadow-sm hover:shadow-xl transition-shadow" target="_blank">
+        <a href="{base}/CV2025SINEM.pdf" class="btn hover:border-lightpink hover:bg-lightpink inset-shadow-sm hover:shadow-xl transition-shadow" target="_blank">
           Mon CV
         </a>
       </div>
