@@ -10,29 +10,26 @@ const projects = [
     category: "frontend",
     github: "https://github.com/nojikodaisy/portfolio",
     featured: false
+  },
+  {
+    id: 2,
+    title: "Mood Meal",
+    description: "Application web qui génère des suggestions de boissons personnalisées en fonction de l'humeur, de la phase du cycle menstruel. Utilise l'IA (Groq/Llama) pour proposer des recettes adaptées avec leurs bienfaits.",
+    image: "/",
+    tech: ["React", "TypeScript", "Spring Boot", "Tailwind CSS", "Docker"],
+    category: "fullstack",
+    github: "https://github.com/nojikodaisy/mood-meal",
+    featured: false
   }
 ];
 
 export default function Projects() {
-  const [filter, setFilter] = useState('all');
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 3;
   
-  const filteredProjects = projects.filter(project => 
-    filter === 'all' || project.category === filter
-  );
-
-  // Calculer les projets à afficher
-  const totalPages = Math.ceil(filteredProjects.length / itemsPerPage);
+  const totalPages = Math.ceil(projects.length / itemsPerPage);
   const startIndex = (currentPage - 1) * itemsPerPage;
-  const endIndex = startIndex + itemsPerPage;
-  const displayedProjects = filteredProjects.slice(startIndex, endIndex);
-
-  // Réinitialiser la page quand on change de filtre
-  const handleFilterChange = (newFilter) => {
-    setFilter(newFilter);
-    setCurrentPage(1);
-  };
+  const displayedProjects = projects.slice(startIndex, startIndex + itemsPerPage);
 
   const ProjectCard = ({ project }) => (
     <div className="card bg-base-100 shadow-lg hover:shadow-xl transition-all duration-300 group">
@@ -100,29 +97,6 @@ export default function Projects() {
           <p className="text-lg text-base-content/70 max-w-2xl mx-auto">
             Découvrez quelques-uns de mes projets récents en développement backend et analyse de données.
           </p>
-        </div>
-
-        <div className="flex justify-center mb-12">
-          <div className="btn-group">
-            <button 
-              className={`btn ${filter === 'all' ? 'bg-pink text-pink-content' : 'btn-ghost'}`}
-              onClick={() => handleFilterChange('all')}
-            >
-              Tous
-            </button>
-            <button 
-              className={`btn ${filter === 'backend' ? 'bg-pink text-pink-content' : 'btn-ghost'}`}
-              onClick={() => handleFilterChange('backend')}
-            >
-              Backend
-            </button>
-            <button 
-              className={`btn ${filter === 'data' ? 'bg-pink text-pink-content' : 'btn-ghost'}`}
-              onClick={() => handleFilterChange('data')}
-            >
-              Data
-            </button>
-          </div>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
